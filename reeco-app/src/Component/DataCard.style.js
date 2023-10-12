@@ -23,10 +23,10 @@ export const SearchBar = styled.input`
 
 export const AddItemButton = styled.button`
   padding: 10px 15px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
+  background-color: #fff;
+  color: green;
+  border: 1px solid green;
+  border-radius: 30px;
   cursor: pointer;
 `;
 
@@ -67,10 +67,18 @@ export const UrgentPrompt = styled.div`
   border: 1px solid #ccc;
   border-radius: 8px;
   z-index: 1000;
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
 `;
 
 export const Tag = styled.span`
 display: inline-block
 font-size: 12px;
 border-radius: 2px;
+`
+
+export const PopupButtonWrapper = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
 `

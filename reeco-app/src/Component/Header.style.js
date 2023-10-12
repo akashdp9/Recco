@@ -6,7 +6,7 @@ export const HeaderContainer = styled.div`
   align-items: center;
   background-color: green;
   color: #fff;
-  padding: 10px 20px;
+  padding: 20px 20px;
 `;
 
 export const LeftSection = styled.div`

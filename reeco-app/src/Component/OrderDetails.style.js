@@ -31,6 +31,4 @@ padding: 15px;
 export const SpecificDetail = styled.div`
 display: flex;
 flex-direction: column;
-border-right: 1px solid grey;
-
 `

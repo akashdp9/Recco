@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { setProducts, approveProduct, markUrgent } from "../redux/productsSlice";
 import { setSearchQuery, openUrgentPrompt, closeUrgentPrompt } from '../redux/uiSlice';
 import productsData from "./productsData.json";
-import {Container, Header, SearchBar, AddItemButton, Table, Tr, Th, Td, ActionIcons, UrgentPrompt, Tag} from './DataCard.style'
+import {Container, Header, SearchBar, AddItemButton, Table, Tr, Th, Td, ActionIcons, UrgentPrompt, Tag, PopupButtonWrapper} from './DataCard.style'
 
 
 const DataCard = () => {
@@ -96,9 +96,13 @@ const isUrgentPromptOpen = useSelector((state) => state.ui.isUrgentPromptOpen);
     </Container>
     {isUrgentPromptOpen && (
         <UrgentPrompt>
-          <p>Is it urgent?</p>
+          <h3>Missing Product?</h3>
+          <span>Is the Product Missing ? </span>
+          <PopupButtonWrapper>
           <button onClick={() => handleMarkUrgent(productIdToMarkUrgent, true)}>Yes</button>
           <button onClick={() => handleMarkUrgent(productIdToMarkUrgent, false)}>No</button>
+          </PopupButtonWrapper>
+          
         </UrgentPrompt>
       )}
       </>

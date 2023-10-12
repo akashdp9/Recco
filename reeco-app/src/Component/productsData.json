@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "productName": "Product A",
+      "brand": "Brand X",
+      "price": 10.99,
+      "quantity": 5,
+      "total": 54.95,
+      "status": ""
+    },
+    {
+      "id": 2,
+      "productName": "Product B",
+      "brand": "Brand Y",
+      "price": 15.99,
+      "quantity": 3,
+      "total": 47.97,
+      "status": "Approved"
+    }
+  ]
+  

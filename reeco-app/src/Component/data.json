@@ -1,0 +1,12 @@
+[
+    {
+      "id": "1",
+      "supplier": "Supplier 1",
+      "shippingDate": "2023-10-11",
+      "total": 100,
+      "category": "Category A",
+      "department": "'Department X",
+      "status": "Shipped",
+      "description": "Description for Item 1"
+    }
+  ]
